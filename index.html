@@ -4,15 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/660554cbc8.js" crossorigin="anonymous"></script>
     <title>Forum</title>
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto">
+        <!-- Nav start -->
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li title="Home"><a href=""><i class="fa-solid fa-house"></i></a></li>
+                        <li title="Edit"><a><i class="fa-solid fa-pen-to-square"></i></a></li>
+                        <li title="Add"><a><i class="fa-solid fa-user-plus"></i></a></li>
+                        <li title="Support"><a><i class="fa-solid fa-flag"></i></a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Forum</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 ">
+                    <li title="Home"><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li title="Edit"><a><i class="fa-solid fa-pen-to-square"></i></a></li>
+                    <li title="Add"><a><i class="fa-solid fa-user-plus"></i></a></li>
+                    <li title="Support"><a><i class="fa-solid fa-flag"></i></a></li>
+                </ul>
+            </div>
+            <div class="">
+                <a class="btn">Sign Up</a>
+            </div>
+        </div>
+        <!-- Nav end -->
 
+        <!-- banner start -->
+        <div class="hero h-auto lg:h-96 p-5 lg:p-0 bg-[#12132D] rounded-3xl mt-14" style="background-image: url(images/bgbanner.png);">
+           
+                <div class="flex flex-col lg:flex-row items-center gap-20">
+                    <div class="w-auto">
+                        <h1 class="mb-5 text-[#FFF] text-5xl font-bold">Welcome to the <br> <span>ReTro</span> Forum</h1>
+                        <p class="mb-5 text-[#FFF]">Share your favorite opinion and win and wp forum coffee mug!</p>
+                        <label class="input input-bordered flex items-center gap-2 rounded-full">
+                            <input type="text" class="grow rounded-3xl" placeholder="Search anything here..." />
+                            <button>Search</button>
+                        </label>
+                    </div>
+
+                    <div class="bg-[#FFF] flex items-center p-12 rounded-3xl">
+                        <div>
+                            <div class="flex justify-between gap-10">
+                                <h4>Registered Users</h4>
+                                <h4>1000</h4>
+                            </div>
+                            <div class="flex justify-between gap-10">
+                                <h4>Forum</h4>
+                                <h4>6000</h4>
+                            </div>
+                            <div class="flex justify-between gap-10">
+                                <h4>Topics</h4>
+                                <h4>90</h4>
+                            </div>
+                            <div class="flex justify-between gap-10">
+                                <h4>Replies</h4>
+                                <h4>56021</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+        <!-- banner end -->
     </header>
     <main>
 
