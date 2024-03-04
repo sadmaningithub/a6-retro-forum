@@ -74,6 +74,14 @@ const displayPosts = (loadedPosts) => {
 
 const markRead = (title, view) => {
     const readingDetails = document.getElementById('reading-details')
+    const readNum = document.getElementById('read-count')
+    
+    const readNumText = readNum.innerText
+    const convrtNum = parseInt(readNumText)
+
+    const newNum = convrtNum + 1
+    readNum.innerText = newNum
+    // console.log(convrtNum)
 
     const detailsDiv = document.createElement('div')
     detailsDiv.classList = `flex flex-row justify-between bg-[#FFF] p-4 rounded-2xl`
@@ -81,6 +89,8 @@ const markRead = (title, view) => {
     <h1 class="flex flex-row items-center gap-2 text-[#12132D99] text-base roboto-regular"><img
             src="images/tabler-icon-eye.png" alt=""> ${view}</h1>`
     readingDetails.appendChild(detailsDiv)
+
+    
 }
 
 
