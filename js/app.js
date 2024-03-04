@@ -65,12 +65,27 @@ const displayPosts = (loadedPosts) => {
     postContainer.appendChild(postCard)
 
     })
+
+    toggleSpinner(false)
 }
 
+
+
 const searchText = () =>{
+    toggleSpinner(true)
     const textElement = document.getElementById('search-text')
     const searchText = textElement.value
     loadPost(searchText)
+}
+
+const toggleSpinner = (isLoading) =>{
+    const spinner = document.getElementById('loading-spinner')
+    if(isLoading){
+        spinner.classList.remove('hidden')
+    }
+    else{
+        spinner.classList.add('hidden')
+    }
 }
 
 const loadLatestPost = async () =>{
