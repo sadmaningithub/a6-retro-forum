@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/660554cbc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Forum</title>
 </head>
 
@@ -48,46 +49,210 @@
         <!-- Nav end -->
 
         <!-- banner start -->
-        <div class="hero h-auto lg:h-96 p-5 lg:p-0 bg-[#12132D] rounded-3xl mt-14" style="background-image: url(images/bgbanner.png);">
-           
-                <div class="flex flex-col lg:flex-row items-center gap-20">
-                    <div class="w-auto">
-                        <h1 class="mb-5 text-[#FFF] text-5xl font-bold">Welcome to the <br> <span>ReTro</span> Forum</h1>
-                        <p class="mb-5 text-[#FFF]">Share your favorite opinion and win and wp forum coffee mug!</p>
-                        <label class="input input-bordered flex items-center gap-2 rounded-full">
-                            <input type="text" class="grow rounded-3xl" placeholder="Search anything here..." />
-                            <button>Search</button>
-                        </label>
-                    </div>
+        <div class="hero h-auto lg:h-96 p-5 lg:p-0 bg-[#12132D] rounded-3xl mt-10"
+            style="background-image: url(images/bgbanner.png);">
 
-                    <div class="bg-[#FFF] flex items-center p-12 rounded-3xl">
-                        <div>
-                            <div class="flex justify-between gap-10">
-                                <h4>Registered Users</h4>
-                                <h4>1000</h4>
-                            </div>
-                            <div class="flex justify-between gap-10">
-                                <h4>Forum</h4>
-                                <h4>6000</h4>
-                            </div>
-                            <div class="flex justify-between gap-10">
-                                <h4>Topics</h4>
-                                <h4>90</h4>
-                            </div>
-                            <div class="flex justify-between gap-10">
-                                <h4>Replies</h4>
-                                <h4>56021</h4>
-                            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="w-auto">
+                    <h1 class="mb-5 text-[#FFF] text-5xl font-bold">Welcome to the <br> <span>ReTro</span> Forum</h1>
+                    <p class="mb-5 text-[#FFF]">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <label class="input input-bordered flex items-center gap-2 rounded-full">
+                        <input type="text" class="grow rounded-3xl" placeholder="Search anything here..." />
+                        <button>Search</button>
+                    </label>
+                </div>
+
+                <div class="bg-[#FFF] flex items-center p-12 rounded-3xl">
+                    <div>
+                        <div class="flex justify-between gap-10">
+                            <h4>Registered Users</h4>
+                            <h4>1000</h4>
+                        </div>
+                        <div class="flex justify-between gap-10">
+                            <h4>Forum</h4>
+                            <h4>6000</h4>
+                        </div>
+                        <div class="flex justify-between gap-10">
+                            <h4>Topics</h4>
+                            <h4>90</h4>
+                        </div>
+                        <div class="flex justify-between gap-10">
+                            <h4>Replies</h4>
+                            <h4>56021</h4>
                         </div>
                     </div>
-
                 </div>
-            
+
+            </div>
+
         </div>
         <!-- banner end -->
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- discuss section -->
+        <!-- discuss header header -->
+        <div class="text-center space-y-6 mt-24 mb-12">
+            <h1 class="roboto-black text-4xl	">
+                Let’s Discuss
+            </h1>
+            <p class="text-[#12132D99] roboto-regular text-lg">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                features allow for a streamlined .
+            </p>
+        </div>
+        <!-- discuss header end -->
+        <!-- posts -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="card col-span-2 space-y-6">
+                <div class="flex flex-col lg:flex-row items-center p-10 bg-[#F3F3F5] rounded-3xl">
+                    <div>
+                        <div class="avatar online">
+                            <div class="w-24 rounded-xl">
+                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="flex flex-row gap-10 text-[#12132DCC] text-sm roboto-medium">
+                            <h4> # <span>Music</span> </h4>
+                            <h4>Author : Awlad Hossain</h4>
+                        </div>
+    
+                        <h2 class="card-title roboto-bold text-xl">10 Kids Unaware of Their Halloween Costume</h2>
+                        <p class="text-base	roboto-regular text-[#12132D99]">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your
+                            prerogative</p>
+                        <hr class="border-dashed">
+                        <div class="card-actions flex flex-row justify-between">
+                            <div class="flex flex-row gap-4 text-[#12132D99] roboto-regular">
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-message-2.png" alt=""></div>
+                                    <p>560</p>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-eye.png" alt=""></div>
+                                    <p>1568</p>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-clock-hour-9.png" alt=""></div>
+                                    <p>5 min</p>
+                                </div>
+                            </div>
+    
+                            <button class=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                    viewBox="0 0 28 28" fill="none">
+                                    <path
+                                        d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                        fill="#10B981" />
+                                </svg></button>
+                        </div>
+                    </div>
+    
+                    
+                </div>
 
+                <div class="flex flex-col lg:flex-row items-center p-10 bg-[#F3F3F5] rounded-3xl">
+                    <div>
+                        <div class="avatar online">
+                            <div class="w-24 rounded-xl">
+                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="flex flex-row gap-10">
+                            <h4> # <span>Music</span> </h4>
+                            <h4>Author : Awlad Hossain</h4>
+                        </div>
+    
+                        <h2 class="card-title">10 Kids Unaware of Their Halloween Costume</h2>
+                        <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your
+                            prerogative</p>
+                        <hr class="border-dashed">
+                        <div class="card-actions flex flex-row justify-between">
+                            <div class="flex flex-row gap-4">
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-message-2.png" alt=""></div>
+                                    <p>560</p>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-eye.png" alt=""></div>
+                                    <p>1568</p>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <div><img src="images/tabler-icon-clock-hour-9.png" alt=""></div>
+                                    <p>5 min</p>
+                                </div>
+                            </div>
+    
+                            <button class=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                    viewBox="0 0 28 28" fill="none">
+                                    <path
+                                        d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                        fill="#10B981" />
+                                </svg></button>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+            
+
+        
+            <div class="card bg-[#12132D0D] p-6 shadow-xl space-y-4 h-40">
+                <div class="flex flex-row justify-between text-xl roboto-bold">
+                    <h1>Title</h1>
+                    <h1 class="text-[#12132D99]">Mark as read (<span>0</span>)</h1>
+                </div>
+
+                <div class="flex flex-row justify-between bg-[#FFF] p-4 rounded-2xl">
+                    <h1 class="text-base roboto-medium">10 Kids Unaware of Their Halloween Costume</h1>
+                    <h1 class="flex flex-row items-center gap-2 text-[#12132D99] text-base roboto-regular"><img src="images/tabler-icon-eye.png" alt=""> 50</h1>
+                </div>
+
+                
+               
+            </div>
+        <!-- posts end -->
+
+        </section>
+
+        <!-- join forum banner -->
+
+        <div class="flex flex-col lg:flex-row gap-5 justify-between items-center bg-[#12132D] p-20 rounded-3xl my-24">
+            <div class="text-white space-y-6">
+                <h1 class="text-4xl	roboto-black ">
+                    Join Our Forum
+                </h1>
+                <p class="text-lg roboto-regular">
+                    Share your favorite opinion and win and wp forum coffee mug! Yes, you can <br> run unit tests and view the results directly within the app. 
+                </p>
+                <button class="btn bg-[#797DFC] py-4 px-10 rounded-full border-none text-white">Registered Now</button>
+            </div>
+            <div>
+                <img src="images/joinforum.png" alt="">
+            </div>
+           
+        </div>
+
+        <!-- join forum banner end -->
+
+        <!-- latest post section -->
+        <!-- latest post heading -->
+
+        <div class="text-center space-y-6">
+            <h1 class="text-4xl	roboto-black">
+                Latest Posts
+            </h1>
+            <h4 class="text-base roboto-regular">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </h4>
+        </div>
+
+        <!-- latest post heading end -->
+        
+
+        <!-- latest post section ends -->
     </main>
     <footer>
 
