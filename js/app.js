@@ -66,7 +66,10 @@ const displayPosts = (loadedPosts) => {
 
     })
 
-    toggleSpinner(false)
+    setTimeout( () => {
+        toggleSpinner(false)
+    }, 2000)
+    
 }
 
 
