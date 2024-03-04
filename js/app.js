@@ -14,12 +14,12 @@ const displayPosts = (loadedPosts) => {
     postContainer.textContent = ''
 
     loadedPosts.forEach(post => {
-        // console.log(post)
+        console.log(post)
         const postCard = document.createElement('div')
         postCard.classList = `flex flex-col lg:flex-row items-center p-10 bg-[#F3F3F5] rounded-3xl`
         postCard.innerHTML = ` <div class="flex flex-col lg:flex-row items-center bg-[#F3F3F5] rounded-3xl">
         <div>
-            <div class="avatar offline">
+            <div class="avatar online">
                 <div class="w-24 rounded-xl">
                     <img src="${post.image}" />
                 </div>
@@ -64,6 +64,7 @@ const displayPosts = (loadedPosts) => {
 
         postContainer.appendChild(postCard)
 
+        
     })
 
     setTimeout(() => {
