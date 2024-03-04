@@ -57,8 +57,8 @@
                     <h1 class="mb-5 text-[#FFF] text-6xl roboto-black">Welcome to the <br> <span>ReTro</span> Forum</h1>
                     <p class="mb-5 text-[#FFFFFFCC] text-base	roboto-medium">Share your favorite opinion and win and wp forum coffee mug!</p>
                     <label class="input input-bordered flex items-center gap-2 rounded-full">
-                        <input type="text" class="grow rounded-3xl" placeholder="Search anything here..." />
-                        <button  class="bg-[#797DFC] text-white rounded-full px-4 py-2">Search</button>
+                        <input id="search-text" type="text" class="grow rounded-3xl" placeholder="Search anything here..." />
+                        <button onclick="searchText()" id="search-category" class="bg-[#797DFC] text-white rounded-full px-4 py-2">Search</button>
                     </label>
                 </div>
 
@@ -156,10 +156,10 @@
 
 
 
-            <div class="card bg-[#12132D0D] p-6 shadow-xl space-y-4 h-40">
+            <div id="reading-details" class="card bg-[#12132D0D] p-6 shadow-xl space-y-4 h-40">
                 <div class="flex flex-row justify-between text-xl roboto-bold">
                     <h1>Title</h1>
-                    <h1 class="text-[#12132D99]">Mark as read (<span>0</span>)</h1>
+                    <h1 class="text-[#12132D99]">Mark as read (<span id="read-count">0</span>)</h1>
                 </div>
 
                 <div class="flex flex-row justify-between bg-[#FFF] p-4 rounded-2xl">
